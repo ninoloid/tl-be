@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-simple-server",
+  "version": "1.0.0",
+  "description": "BE Test of Travelio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "Ahmad MSA",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

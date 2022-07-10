@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "f7e337ad-d3c4-455d-bd71-e2c945788620",
+		"name": "Travelio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get by Keyword from Google Books API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/search?keyword=golang",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "golang"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a New Wishlish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Hands-on Go Programming\",\n    \"author\": \"Sachchidanand Singh, Prithvipal Singh\",\n    \"thumbnail\": \"http://books.google.com/books/content?id=Q3whEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/wishlish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Wishlish",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/wishlishs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlishs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
